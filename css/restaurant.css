@@ -3,18 +3,18 @@ html {
   font-family: Roboto, sans-serif;
 }
 
-header {
+.header {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   padding: 15px;
 }
-header__logo {
+.header__logo {
   text-align: center;
   margin: 0;
   font-family: "Shrikhand", serif;
   font-weight: 400;
   font-style: normal;
 }
-header__btn {
+.header__btn {
   position: absolute;
   left: 17px;
   top: 37px;
@@ -138,6 +138,7 @@ header__btn {
   background-color: #99e2d0;
   margin: -16px -70px -16px 16px;
   width: 64px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,8 +150,8 @@ header__btn {
 }
 
 .item__icon {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: #FFFFFF;
   display: flex;
   align-items: center;

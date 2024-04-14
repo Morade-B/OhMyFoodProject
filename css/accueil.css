@@ -47,7 +47,7 @@ html {
   transition-property: transform;
   transition-duration: 400ms;
 }
-.info:hover {
+.info__btn:hover {
   transform: scale(1.15);
 }
 .info__title {
