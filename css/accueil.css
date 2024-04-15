@@ -165,6 +165,7 @@ html {
   text-decoration: none;
   position: relative;
   color: black;
+ 
 }
 .card__img {
   height: 190px;
@@ -189,7 +190,13 @@ html {
 .card .card__title {
   margin: 0 0 5px 0;
 }
-.icon:hover {
+.card__icon {
+
+ width: 15px;
+
+}
+
+.card__icon:hover {
    background-color: violet;
  
 

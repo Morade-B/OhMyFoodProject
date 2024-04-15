@@ -24,6 +24,7 @@ html {
         position: absolute;
         left: 17px;
         top: 37px;
+        text-decoration: none;
         
         
     }
@@ -47,7 +48,7 @@ html {
 }
 
 .restaurant {
-    width: 90%;
+   
     height: 29px;
     display: flex;
     align-items: center;
@@ -65,9 +66,10 @@ html {
 
 
     &__icon {
-        width: 10px;
-        height: 10px;
-        margin-left: 60px;
+        width: 15px;
+        height: 13px;
+        margin-left: 30px;
+        border-radius: 5px;
         cursor: pointer;
 
         &:hover {
@@ -140,6 +142,7 @@ html {
     &__subtitle {
         margin: 0;
     }
+
 }
 
 @keyframes item {
@@ -246,6 +249,7 @@ html {
     &__list {
         list-style: none;
         padding: 0;
+        gap:20px;
     }
 
     &__line {

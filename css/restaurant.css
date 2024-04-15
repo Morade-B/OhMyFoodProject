@@ -18,6 +18,7 @@ html {
   position: absolute;
   left: 17px;
   top: 37px;
+  text-decoration: none;
 }
 
 .img {
@@ -37,7 +38,7 @@ html {
 }
 
 .restaurant {
-  width: 90%;
+  
   height: 29px;
   display: flex;
   align-items: center;
@@ -49,9 +50,10 @@ html {
   font-weight: 400;
 }
 .restaurant__icon {
-  width: 22px;
-  height: 21px;
-  margin-left: 60px;
+  width: 15px;
+  height: 13px;
+  margin-left: 30px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .restaurant__icon:hover {
@@ -207,6 +209,7 @@ html {
 .footer__list {
   list-style: none;
   padding: 0;
+  gap: 20px;
 }
 .footer__line {
   margin: 10px 0;
