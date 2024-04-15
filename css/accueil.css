@@ -104,9 +104,6 @@ html {
   background: #FFFFFF;
 }
 
-.fonct__title{
-  padding-left: 70px;
-}
 
 .fonct__subtitle {
   padding: 20px;
@@ -144,9 +141,7 @@ html {
 .restaurants {
   background: #F6F6F6;
 }
-.restaurants__title {
-  padding: 30px 0 0 70px;
-}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -241,11 +236,14 @@ html {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 @media (min-width: 1024px) {
+ 
   .fonct__subtitles {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
   }
+ 
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
