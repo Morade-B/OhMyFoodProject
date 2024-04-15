@@ -43,7 +43,7 @@ html {
       
     }
   }
-  
+
 .header {
     box-shadow: 0px 2px 4px 0px #00000026;
     padding: 15px;
@@ -137,6 +137,9 @@ html {
 .fonct {
     background: #FFFFFF;
 
+    &__title {
+        padding-left: 70px;
+    }
 
     &__subtitle {
         padding: 20px;
@@ -188,7 +191,9 @@ html {
 .restaurants {
     background: #F6F6F6;
 
-
+    &__title{
+        padding: 30px 0 0 70px;
+    }
 
 }
 
@@ -197,9 +202,9 @@ html {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 18px;
-    padding: 30px;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    padding: 30px 80px;
+    column-gap: 5rem;
+    row-gap: 3rem;
 }
 
 
@@ -301,6 +306,7 @@ html {
     &__list {
         list-style: none;
         padding: 0;
+        gap:20px;
 
     }
 
