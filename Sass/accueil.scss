@@ -18,7 +18,7 @@ html {
     align-items: center;
     z-index: 9999;
     animation: loader .01s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: both;
     
     
@@ -265,19 +265,16 @@ html {
     .card__title {
 
         margin: 0 0 5px 0;
+        
 
     }
 
     .card__icon {
 
-        width: 82px;
-        height: 21px;
-        display: flex;
-        position: relative;
-        top: 5px;
-        left: 220px;
-        color: #9356DC;
-
+       
+      font-size: 25px;
+    
+      
 
 
     }
@@ -345,17 +342,38 @@ html {
 
 @media (min-width: 1024px) {
 
+
+.info__title {
+     font-size: 40px;
+}
+.info__btn{
+    padding: 17px 25px;
+}
+.fonct{
+    padding: 20px 0 0 0;
+}
+.fonct .container{
+    padding: 0 100px ;
+}
+.restaurants{
+    padding: 10px 100px 30px 100px;
+}
     .fonct__subtitles {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
+    
 
     }
-
+.fonct__subtitle{ 
+    padding: 15px;
+    padding-right: 70px;
+}
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        row-gap: 3rem;
 
     }
 
@@ -370,6 +388,7 @@ html {
         display: flex;
         margin-right: 200px;
         margin-bottom: -30px;
+        gap: 16px;
 
     }
 }
