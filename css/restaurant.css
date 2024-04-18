@@ -176,7 +176,7 @@ html {
 .info {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .info__btn {
   padding: 15px 40px;
@@ -232,13 +232,13 @@ html {
 @media (min-width: 1024px) {
   .restaurants {
     width: 80%;
-    height: 1400px;
+    height: 1370px;
     margin-left: 10%;
   }
   .restaurant {
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
   }
   .restaurant:active {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
