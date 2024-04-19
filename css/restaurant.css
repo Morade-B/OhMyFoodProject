@@ -53,14 +53,30 @@ html {
   font-style: italic;
   font-weight: 400;
 }
-.restaurant__icon {
-  margin-left: 30px;
+.restaurant__icon1 {
+  position: relative;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.restaurant__icon1:hover {
+  opacity: 0;
+}
+.restaurant__icon2 {
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  opacity: 0;
+  transition-duration: 1s;
+  position: relative;
+  left: -5px;
   font-size: 25px;
   cursor: pointer;
   transition-duration: 1s;
 }
-.restaurant__icon:hover {
-  color: violet;
+.restaurant__icon2:hover {
+  opacity: 1;
 }
 
 .menu {

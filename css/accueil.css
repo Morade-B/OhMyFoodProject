@@ -194,8 +194,32 @@ html {
 .card .card__title {
   margin: 0 0 5px 0;
 }
-.card .card__icon {
+
+.icon1 {
+  position: relative;
+  left: 19px;
   font-size: 25px;
+  cursor: pointer;
+}
+.icon1:hover {
+  opacity: 0;
+}
+
+.icon2 {
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  opacity: 0;
+  transition-duration: 1s;
+  position: relative;
+  left: -10px;
+  font-size: 25px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.icon2:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -256,7 +280,7 @@ html {
   }
   .fonct__subtitle {
     padding: 15px;
-    padding-right: 70px;
+    width: 100%;
   }
   .cards {
     display: grid;
