@@ -17,15 +17,14 @@ html {
   align-items: center;
   z-index: 9999;
   animation: loader 0.01s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
 }
-
 .loader .spinner {
   width: 40px;
   height: 40px;
   border: 8px solid #f3f3f3;
-  border-top: 8px solid violet;
+  border-top: 8px solid #FF79DA;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -67,12 +66,25 @@ html {
   height: 19px;
   margin-left: 15px;
   font-weight: 500;
+  font-family: "Roboto";
+  border: none;
+  background: #eaeaea;
+  font-size: 16px;
 }
 
 .info {
   padding: 20px 20px 60px 20px;
   text-align: center;
   background-color: #fafafa;
+}
+.info__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.info__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 .info__btn {
   padding: 15px 25px;
@@ -90,15 +102,6 @@ html {
   transform: scale(1.15);
   background-image: linear-gradient(193.33deg, #a371df -11.44%, #f882d6 123.93%);
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.5);
-}
-.info__title {
-  font-size: 24px;
-  font-weight: 700;
-}
-.info__subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 40px;
 }
 
 .fonct {
@@ -121,6 +124,12 @@ html {
   display: flex;
   align-items: center;
 }
+.fonct__icon {
+  width: 13px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
 .fonct__number {
   width: 24px;
   height: 24px;
@@ -132,13 +141,7 @@ html {
   color: #FFFFFF;
   margin-left: -45px;
 }
-.fonct__icon {
-  width: 13px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-}
-.fonct .text {
+.fonct__text {
   color: #000000;
   font-weight: 600;
   padding-left: 40px;
@@ -151,8 +154,7 @@ html {
 .restaurants__title {
   padding-left: 20px;
 }
-
-.cards {
+.restaurants .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 18px;
@@ -162,13 +164,16 @@ html {
 }
 
 .card {
+  position: relative;
+}
+.card__link {
   border-radius: 15px;
   background: #FFFFFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: #fff;
   border-radius: 15px;
   text-decoration: none;
-  position: relative;
+  display: block;
   color: black;
 }
 .card__img {
@@ -191,21 +196,24 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.card .card__title {
+.card__title {
   margin: 0 0 5px 0;
 }
-
-.icon1 {
+.card__icon {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+.card__icon1 {
   position: relative;
   left: 19px;
   font-size: 25px;
   cursor: pointer;
 }
-.icon1:hover {
+.card__icon1:active {
   opacity: 0;
 }
-
-.icon2 {
+.card__icon2 {
   font-weight: 900;
   color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -216,9 +224,9 @@ html {
   left: -10px;
   font-size: 25px;
   cursor: pointer;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
-.icon2:hover {
+.card__icon2:active {
   opacity: 1;
 }
 
@@ -270,9 +278,6 @@ html {
   .fonct .container {
     padding: 0 100px;
   }
-  .restaurants {
-    padding: 10px 100px 30px 100px;
-  }
   .fonct__subtitles {
     display: flex;
     flex-direction: row;
@@ -282,11 +287,39 @@ html {
     padding: 15px;
     width: 100%;
   }
+  .restaurants {
+    padding: 10px 100px 30px 100px;
+  }
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
     row-gap: 3rem;
+  }
+  .card__icon1 {
+    position: relative;
+    left: 19px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .card__icon1:hover {
+    opacity: 0;
+  }
+  .card__icon2 {
+    font-weight: 900;
+    color: transparent;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    opacity: 0;
+    transition-duration: 1s;
+    position: relative;
+    left: -10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .card__icon2:hover {
+    opacity: 1;
   }
   .footer .container {
     display: flex;

@@ -1,9 +1,7 @@
 body,
 html {
-
     font-family: Roboto, sans-serif;
     margin: 0;
-   
 }
 
 .loader {
@@ -18,52 +16,49 @@ html {
     align-items: center;
     z-index: 9999;
     animation: loader .01s;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
-    
-    
-  }
-  
-  .loader .spinner {
-    width: 40px;
-    height: 40px;
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid violet;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-   
-  }
-  @keyframes loader {
-    100% {
-     
-      display: none;
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #FF79DA;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
     }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    100% {
+        display: none;
+    }
+}
 
 .header {
     box-shadow: 0px 2px 4px 0px #00000026;
     padding: 15px 0;
     position: relative;
- 
-  
-
 
     &__logo {
         font-family: Shrikhand;
         text-align: center;
         margin: 0;
-
     }
 
 }
 
 .localisation {
-
     height: 50px;
     display: flex;
     justify-content: center;
@@ -71,32 +66,35 @@ html {
     box-shadow: 0px 4px 4px 0px #00000040;
     align-items: center;
 
-
     &__text {
         width: 109px;
         height: 19px;
         margin-left: 15px;
         font-weight: 500;
-
+        font-family: 'Roboto';
+        border: none;
+        background: #eaeaea;
+        font-size: 16px;
     }
 }
-
-
-
-
-
-
-
 
 .info {
     padding: 20px 20px 60px 20px;
     text-align: center;
     background-color: #fafafa;
 
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
 
     &__btn {
-
-
         padding: 15px 25px;
         border-radius: 25px;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -107,49 +105,24 @@ html {
         text-decoration: none;
         transition-property: transform;
         transition-duration: 400ms;
-         
+
         &:hover {
             transform: scale(1.15);
             background-image: linear-gradient(193.33deg, #a371df -11.44%, #f882d6 123.93%);
             box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .5);
-            }
         }
-
-
-    
-
- 
-
-
-    &__title {
-        font-size: 24px;
-        font-weight: 700;
-
     }
-
-    &__subtitle {
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 40px;
-
-
-    }
-
 }
-
 
 .fonct {
     background: #FFFFFF;
     padding: 20px 0 40px 0;
 
-
-
-
     &__title {
         padding-left: 20px;
     }
-    
-    &__subtitles{
+
+    &__subtitles {
         padding-left: 15px;
     }
 
@@ -162,10 +135,14 @@ html {
         list-style: none;
         display: flex;
         align-items: center;
-
-
     }
 
+    &__icon {
+        width: 13px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
 
     &__number {
         width: 24px;
@@ -177,26 +154,12 @@ html {
         align-items: center;
         color: #FFFFFF;
         margin-left: -45px;
-
-
     }
 
-
-    &__icon {
-        width: 13px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-
-
-    }
-
-    .text {
+    &__text {
         color: #000000;
         font-weight: 600;
         padding-left: 40px;
-
-
     }
 }
 
@@ -204,46 +167,40 @@ html {
     background: #F6F6F6;
     padding: 30px 0 60px 0px;
 
-    &__title{
+    &__title {
         padding-left: 20px;
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+        padding: 0px 15px;
+        column-gap: 5rem;
+        row-gap: 3rem;
+    }
 }
-
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 18px;
-    padding: 0px 15px;
-    column-gap: 5rem;
-    row-gap: 3rem;
-}
-
-
-
-
 
 .card {
-    border-radius: 15px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px 0px #0000001A;
-    background-color: #fff;
-    border-radius: 15px;
-    text-decoration: none;
     position: relative;
-    color: black;
 
+    &__link {
+        border-radius: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #0000001A;
+        background-color: #fff;
+        border-radius: 15px;
+        text-decoration: none;
+        display: block;
+        color: black;
+    }
 
     &__img {
         height: 190px;
         width: 100%;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
-
-
     }
-
 
     &__nouveau {
         color: #008766;
@@ -252,68 +209,54 @@ html {
         position: absolute;
         top: 10px;
         right: 10px;
-
-
     }
-
 
     &__footer {
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-
     }
 
-   
-
-    .card__title {
-
+    &__title {
         margin: 0 0 5px 0;
-        
-
     }
 
-    
-}
+    &__icon {
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+    }
 
+    &__icon1 {
+        position: relative;
+        left: 19px;
+        font-size: 25px;
+        cursor: pointer;
 
-.icon1{
-    position: relative;
-    left: 19px;
+        &:active {
+            opacity: 0;
+        }
+    }
 
-    font-size: 25px;
-    cursor: pointer;
-
-    &:hover {
+    &__icon2 {
+        font-weight: 900;
+        color: transparent;
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
         opacity: 0;
+        transition-duration: 1s;
+        position: relative;
+        left: -10px;
+        font-size: 25px;
+        cursor: pointer;
+        transition-duration: .5s;
+
+        &:active {
+            opacity: 1;
+        }
     }
 }
-
-.icon2 {
-    font-weight: 900;
-    color: transparent;
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    background-clip: text;
-     opacity: 0;
-    transition-duration: 1s;
-    position: relative;
-    left: -10px;
-    font-size: 25px;
-    cursor: pointer;
-    transition-duration: 1s;
-    
-
-
-    &:hover {
-        opacity: 1;
-        
-    }
-}
-
-
-
 
 .footer {
     background-color: #353535;
@@ -322,29 +265,19 @@ html {
     .container {
         display: flex;
         flex-direction: column;
-
     }
-
-
-
 
     &__logo {
         font-family: Shrikhand;
         font-size: 18px;
         font-style: italic;
         color: #FFFFFF;
-
-
-
     }
-
-
 
     &__list {
         list-style: none;
         padding: 0;
-        gap:20px;
-
+        gap: 20px;
     }
 
     &__line {
@@ -362,8 +295,6 @@ html {
         margin-right: 15px;
         color: white;
     }
-
-
 }
 
 
@@ -375,53 +306,89 @@ html {
 @media (min-width: 1024px) {
 
 
-.info__title {
-     font-size: 40px;
-}
-.info__btn{
-    padding: 17px 25px;
-}
-.fonct{
-    padding: 20px 0 0 0;
-}
-.fonct .container{
-    padding: 0 100px ;
-}
-.restaurants{
-    padding: 10px 100px 30px 100px;
-}
-    .fonct__subtitles {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    
+    .info {
+        &__title {
+            font-size: 40px;
+        }
 
+        &__btn {
+            padding: 17px 25px;
+        }
     }
-.fonct__subtitle{ 
-    padding: 15px;
-    width: 100%;
-    
-}
+
+    .fonct {
+        padding: 20px 0 0 0;
+
+        .container {
+            padding: 0 100px;
+        }
+
+        &__subtitles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__subtitle {
+            padding: 15px;
+            width: 100%;
+        }
+    }
+
+    .restaurants {
+        padding: 10px 100px 30px 100px;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
         row-gap: 3rem;
-
     }
 
+    .card__icon1 {
+        position: relative;
+        left: 19px;
+        font-size: 25px;
+        cursor: pointer;
 
-    .footer .container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-end;
+        &:hover {
+            opacity: 0;
+        }
     }
 
-    .footer__list {
-        display: flex;
-        margin-right: 200px;
-        margin-bottom: -30px;
-        gap: 16px;
+    .card__icon2 {
+        font-weight: 900;
+        color: transparent;
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        opacity: 0;
+        transition-duration: 1s;
+        position: relative;
+        left: -10px;
+        font-size: 25px;
+        cursor: pointer;
+        transition-duration: .5s;
 
+        &:hover {
+            opacity: 1;
+
+        }
+    }
+
+    .footer {
+
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+
+        &__list {
+            display: flex;
+            margin-right: 200px;
+            margin-bottom: -30px;
+            gap: 16px;
+        }
     }
 }

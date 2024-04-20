@@ -5,14 +5,11 @@ html {
     margin: 0;
 }
 
-
-
 .header {
     box-shadow: 0px 2px 4px 0px #00000026;
     padding: 15px;
     display: flex;
     justify-content: center;
-
 
     &__logo {
         text-align: center;
@@ -28,8 +25,6 @@ html {
         top: 30px;
         text-decoration: none;
         color: black;
-
-
     }
 }
 
@@ -48,62 +43,53 @@ html {
     z-index: 1;
     position: relative;
 
-}
+    .restaurant {
 
-.restaurant {
+        height: 29px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
 
-    height: 29px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
+        &__title {
+            font-family: Shrikhand;
+            font-style: italic;
+            font-weight: 400;
+        }
 
+        &__icon1 {
+            position: relative;
+            left: 20px;
+            font-size: 25px;
+            cursor: pointer;
 
+            &:active {
+                opacity: 0;
+            }
+        }
 
-    &__title {
-        font-family: Shrikhand;
-        font-style: italic;
-        font-weight: 400;
-
-
-    }
-
-    &__icon1{
-        position: relative;
-        left: 20px;
-
-        font-size: 25px;
-        cursor: pointer;
-
-        &:hover {
+        &__icon2 {
+            font-weight: 900;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background-clip: text;
             opacity: 0;
+            transition-duration: 1s;
+            position: relative;
+            left: -5px;
+            font-size: 25px;
+            cursor: pointer;
+            transition-duration: .5s;
+
+            &:active {
+                opacity: 1;
+
+            }
         }
+
     }
-
-    &__icon2 {
-        font-weight: 900;
-        color: transparent;
-        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-        background-clip: text;
-         opacity: 0;
-        transition-duration: 1s;
-        position: relative;
-        left: -5px;
-        font-size: 25px;
-        cursor: pointer;
-        transition-duration: 1s;
-        
-
-
-        &:hover {
-            opacity: 1;
-            
-        }
-    }
-
 }
 
 .menu {
-
     padding-left: 15px;
 
     &__title {
@@ -120,7 +106,6 @@ html {
             position: absolute;
             left: 0;
             bottom: 0;
-
         }
     }
 }
@@ -128,11 +113,9 @@ html {
 .cards {
     list-style: none;
     padding: 0;
-
 }
 
 .card {
-
     width: 93%;
     height: 69px;
     gap: 0px;
@@ -152,7 +135,6 @@ html {
     transform: scale(0);
     max-width: 100%;
 
-
     &__content {
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -166,7 +148,6 @@ html {
         text-overflow: ellipsis;
         overflow: hidden;
     }
-
 }
 
 @keyframes item {
@@ -201,7 +182,6 @@ html {
     align-items: center;
     justify-content: center;
     transition-duration: .6s;
-
 }
 
 .card:hover .item__confirmation {
@@ -226,8 +206,6 @@ html {
 .icon {
     color: #99e2d0;
 }
-
-
 
 .info {
     display: flex;
@@ -260,7 +238,6 @@ html {
 .footer {
     background-color: #353535;
     padding: 20px;
-
 
     &__logo {
         font-family: Shrikhand;
@@ -301,7 +278,6 @@ html {
         width: 80%;
         height: 1370px;
         margin-left: 10%;
-
     }
 
     .restaurant {
@@ -309,8 +285,34 @@ html {
         justify-content: center;
         padding: 50px 0 30px 0;
 
-        &:active {
-            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        &__icon1 {
+            position: relative;
+            left: 19px;
+            font-size: 25px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0;
+            }
+        }
+
+        &__icon2 {
+            font-weight: 900;
+            color: transparent;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background-clip: text;
+            opacity: 0;
+            transition-duration: 1s;
+            position: relative;
+            left: -6px;
+            font-size: 25px;
+            cursor: pointer;
+            transition-duration: .5s;
+
+            &:hover {
+                opacity: 1;
+
+            }
         }
     }
 
