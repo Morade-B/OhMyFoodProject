@@ -64,8 +64,8 @@ html {
 .restaurants .restaurant__icon2 {
   font-weight: 900;
   color: transparent;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
+  background-clip: content-box;
+  color: #9356DC;
   opacity: 0;
   transition-duration: 1s;
   position: relative;
@@ -267,8 +267,8 @@ html {
   .restaurant__icon2 {
     font-weight: 900;
     color: transparent;
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    background-clip: text;
+    background-clip: content-box;
+    color: #9356DC;
     opacity: 0;
     transition-duration: 1s;
     position: relative;

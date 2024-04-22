@@ -154,17 +154,10 @@ html {
 .restaurants__title {
   padding-left: 20px;
 }
-.restaurants .cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 18px;
-  padding: 0px 15px;
-  column-gap: 5rem;
-  row-gap: 3rem;
-}
 
 .card {
   position: relative;
+  margin: 0 15px 20px 15px;
 }
 .card__link {
   border-radius: 15px;
@@ -216,8 +209,8 @@ html {
 .card__icon2 {
   font-weight: 900;
   color: transparent;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
+  background-clip: content-box;
+  color: #9356DC;
   opacity: 0;
   transition-duration: 1s;
   position: relative;
@@ -290,6 +283,9 @@ html {
   .restaurants {
     padding: 10px 100px 30px 100px;
   }
+  .card {
+    margin: 0;
+  }
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,8 +304,8 @@ html {
   .card__icon2 {
     font-weight: 900;
     color: transparent;
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    background-clip: text;
+    background-clip: content-box;
+    color: #9356DC;
     opacity: 0;
     transition-duration: 1s;
     position: relative;
