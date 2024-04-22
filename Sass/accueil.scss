@@ -170,19 +170,11 @@ html {
     &__title {
         padding-left: 20px;
     }
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 18px;
-        padding: 0px 15px;
-        column-gap: 5rem;
-        row-gap: 3rem;
-    }
 }
 
 .card {
     position: relative;
+    margin: 0 15px 20px 15px;
 
     &__link {
         border-radius: 15px;
@@ -338,6 +330,12 @@ html {
     .restaurants {
         padding: 10px 100px 30px 100px;
     }
+
+    .card {
+        margin: 0;
+    }
+
+
 
     .cards {
         display: grid;
