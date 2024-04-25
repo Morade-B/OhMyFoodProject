@@ -13,7 +13,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    animation: loader .1s;
+    animation: loader ;
     animation-delay: 1.5s;
     animation-fill-mode: both;
 
@@ -231,7 +231,6 @@ html {
         background-clip: content-box;
         color: #9356DC;
         opacity: 0;
-
         position: relative;
         left: -10px;
         font-size: 25px;
