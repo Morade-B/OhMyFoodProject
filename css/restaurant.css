@@ -69,7 +69,7 @@ html {
   left: -5px;
   font-size: 25px;
   cursor: pointer;
-  transition-duration: 0.8s;
+  transition: opacity 3s;
 }
 .restaurants .restaurant__icon2:active {
   opacity: 1;
@@ -294,7 +294,7 @@ html {
     left: -6px;
     font-size: 25px;
     cursor: pointer;
-    transition-duration: 0.5s;
+    transition: opacity 3s;
   }
   .restaurant__icon2:hover {
     opacity: 1;
