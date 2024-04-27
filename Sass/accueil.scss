@@ -235,7 +235,7 @@ html {
         left: -10px;
         font-size: 25px;
         cursor: pointer;
-        transition-duration: .8s;
+        transition: opacity 3s;
 
         &:active {
             opacity: 1;
@@ -356,7 +356,7 @@ html {
         left: -10px;
         font-size: 25px;
         cursor: pointer;
-        transition-duration: .8s;
+        transition: opacity 3s; 
 
         &:hover {
             opacity: 1;

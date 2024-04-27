@@ -209,7 +209,7 @@ html {
   left: -10px;
   font-size: 25px;
   cursor: pointer;
-  transition-duration: 0.8s;
+  transition: opacity 3s;
 }
 .card__icon2:active {
   opacity: 1;
@@ -301,7 +301,7 @@ html {
     left: -10px;
     font-size: 25px;
     cursor: pointer;
-    transition-duration: 0.8s;
+    transition: opacity 3s;
   }
   .card__icon2:hover {
     opacity: 1;
